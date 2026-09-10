@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reclaiming the Third Place — The Charles Theatre · Sakhi Shah</title>
+<meta name="description" content="A marketing-research study of the Charles Theatre as a 'third place' for young Baltimore — price sensitivity by age, barriers to attendance, and a student-focused recommendation. Case study by Sakhi Shah.">
+<link rel="canonical" href="https://sakhishah03.github.io/SakhiShah/charles.html">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reclaiming the Third Place — The Charles Theatre case study">
+<meta property="og:description" content="68-response study of the Charles Theatre as a third place: price sensitivity by age (p<.001), barriers to attendance, and a student-focused pricing recommendation.">
+<meta property="og:url" content="https://sakhishah03.github.io/SakhiShah/charles.html">
+<meta property="og:image" content="https://sakhishah03.github.io/SakhiShah/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B1F1A; --surface:#112720; --line:rgba(245,222,218,0.14); --lineSolid:#2A4038;
+  --ink:#F5DEDA; --ink-soft:#C4A8A3; --taupe:#B49B96; --accent:#E3B8B2;
+  --font-display:'Fraunces',serif; --font-body:'Inter',sans-serif; --font-mono:'IBM Plex Mono',monospace;
+  --ease:cubic-bezier(.65,0,.35,1);
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; scroll-padding-top:72px; }
+body{ margin:0; background:var(--bg); color:var(--ink); font-family:var(--font-body); -webkit-font-smoothing:antialiased; line-height:1.6; overflow-x:hidden; }
+h1,h2,h3,p{ margin:0; }
+a{ color:inherit; }
+.grain{ position:fixed; inset:0; z-index:1; pointer-events:none; opacity:.03; mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.wrap{ width:min(920px,100% - 64px); margin-inline:auto; position:relative; z-index:2; }
+@media(max-width:720px){ .wrap{ width:min(920px,100% - 36px); } }
+.display{ font-family:var(--font-display); } .display-italic{ font-family:var(--font-display); font-style:italic; }
+.eyebrow{ font-family:var(--font-mono); font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); font-weight:500; }
+.section-title{ font-family:var(--font-display); font-size:clamp(26px,3vw,32px); color:var(--ink); font-weight:400; }
+.sub{ font-size:14px; color:var(--ink-soft); margin-top:8px; margin-bottom:22px; }
+
+.topbar{ position:sticky; top:0; z-index:50; height:62px; display:flex; align-items:center; background:rgba(11,31,26,.82); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+.topbar .wrap{ display:flex; align-items:center; justify-content:space-between; }
+.topbar .mark{ font-family:var(--font-display); font-style:italic; font-size:19px; text-decoration:none; color:var(--ink); }
+.topbar .back{ font-family:var(--font-mono); font-size:12.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; transition:color .3s var(--ease); }
+.topbar .back:hover{ color:var(--accent); }
+
+.block{ padding:48px 0; border-bottom:1px solid var(--line); }
+.grid-2{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.grid-4{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+@media(max-width:720px){ .grid-2{ grid-template-columns:1fr; } .grid-4{ grid-template-columns:repeat(2,1fr); } }
+
+.stat-card{ background:var(--surface); border:1px solid var(--line); padding:22px 18px; }
+.stat-num{ font-family:var(--font-display); font-size:clamp(28px,3.6vw,40px); color:var(--ink); line-height:1; }
+.stat-label{ font-family:var(--font-mono); font-size:12px; letter-spacing:.03em; color:var(--ink-soft); margin-top:8px; max-width:210px; }
+
+.tabs{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; }
+.tab-btn{ padding:9px 16px; font-size:13px; font-family:var(--font-mono); cursor:pointer; background:transparent; color:var(--ink-soft); border:1px solid var(--lineSolid); transition:all .15s ease; }
+.tab-btn.active{ background:var(--accent); color:var(--bg); border-color:var(--accent); }
+
+/* horizontal distribution bars */
+.hbars{ display:flex; flex-direction:column; gap:14px; }
+.hrow{ display:grid; grid-template-columns:96px 1fr 62px; align-items:center; gap:14px; }
+.hrow .hl{ font-size:12.5px; color:var(--ink-soft); text-align:right; font-family:var(--font-mono); }
+.htrack{ height:22px; background:rgba(245,222,218,0.06); border-radius:5px; overflow:hidden; }
+.hfill{ height:100%; border-radius:5px; background:linear-gradient(90deg,#c98f88,#E3B8B2); transition:width .6s var(--ease); min-width:2px; }
+.hfill.muted{ background:linear-gradient(90deg,#3a5a4e,#4f7a68); }
+.hval{ font-family:var(--font-mono); font-size:12px; color:var(--ink); }
+.hval small{ color:var(--taupe); }
+
+.note{ font-size:14.5px; line-height:1.65; color:var(--ink); border-left:2px solid var(--accent); padding-left:16px; font-family:var(--font-display); font-style:italic; margin-top:22px; }
+.chartbox{ background:var(--surface); border:1px solid var(--line); padding:22px; }
+
+/* donut */
+.donutwrap{ display:flex; align-items:center; gap:8px; }
+.donut-seg{ transition:opacity .2s ease; }
+.donut-seg:hover{ opacity:1 !important; }
+.legend{ display:flex; flex-direction:column; gap:9px; }
+.legend .li{ display:flex; align-items:center; gap:9px; font-size:13.5px; }
+.legend .dot{ width:10px; height:10px; border-radius:50%; flex-shrink:0; }
+.legend .nm{ color:var(--ink-soft); } .legend .vl{ color:var(--ink); margin-left:auto; font-family:var(--font-mono); font-size:12.5px; }
+
+.callout{ background:linear-gradient(135deg,#16362B,#0e241d); border:1px solid var(--line); border-radius:4px; padding:26px 28px; display:flex; align-items:center; gap:26px; flex-wrap:wrap; }
+.callout .big{ font-family:var(--font-display); font-style:italic; font-size:clamp(44px,7vw,64px); color:var(--accent); line-height:1; }
+.callout p{ font-size:14.5px; line-height:1.65; color:var(--ink-soft); flex:1; min-width:240px; }
+
+.rec{ border-top:1px solid var(--accent); padding-top:18px; }
+.rec .eyebrow{ margin-bottom:10px; } .rec h3{ font-family:var(--font-display); font-size:18px; margin:0 0 10px; font-weight:500; color:var(--ink); }
+.rec p{ font-size:14.5px; line-height:1.7; color:var(--ink-soft); }
+
+/* the recommendation "ticket" */
+.ticket{ margin-top:26px; background:linear-gradient(135deg,#16362B,#112720); border:1px solid var(--accent); border-radius:6px; padding:30px; position:relative; overflow:hidden; }
+.ticket .kicker{ font-family:var(--font-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); }
+.ticket h3{ font-family:var(--font-display); font-size:clamp(26px,4vw,36px); font-weight:400; margin:8px 0 6px; }
+.ticket .price{ display:flex; gap:26px; flex-wrap:wrap; margin:20px 0 14px; }
+.ticket .price .p{ font-family:var(--font-display); font-size:26px; color:var(--accent); }
+.ticket .price .p small{ display:block; font-family:var(--font-mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--taupe); margin-top:3px; }
+.ticket p.body{ font-size:14.5px; line-height:1.7; color:var(--ink-soft); max-width:560px; }
+
+.footer{ padding:26px 0 44px; }
+.footer p{ font-size:12.5px; color:var(--taupe); line-height:1.6; font-family:var(--font-mono); }
+.endnav{ display:flex; justify-content:space-between; align-items:center; padding:30px 0; border-top:1px solid var(--line); flex-wrap:wrap; gap:14px; }
+.endnav a{ font-family:var(--font-mono); font-size:13px; letter-spacing:.05em; text-transform:uppercase; text-decoration:none; color:var(--bg); background:var(--accent); padding:12px 22px; border-radius:30px; transition:background .3s var(--ease); }
+.endnav a:hover{ background:var(--ink); }
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<div class="topbar"><div class="wrap"><a class="mark" href="index.html">Sakhi Shah</a><a class="back" href="index.html#work">← All work</a></div></div>
+
+<!-- HERO -->
+<div class="block" style="padding-top:64px;">
+  <div class="wrap">
+    <div class="eyebrow" style="margin-bottom:14px;">Selected Work — Marketing Research &amp; Pricing</div>
+    <h1 class="display-italic" style="font-size:clamp(36px,6vw,56px); line-height:1.05; font-weight:400;">Reclaiming the Third Place</h1>
+    <p style="max-width:610px; font-size:16px; line-height:1.65; color:var(--ink-soft); margin-top:20px;">
+      Can the Charles Theatre — Baltimore's oldest cinema, open since 1939 — become a "third place" for a streaming-era generation? A six-person team surveyed 68 Baltimore-area residents to find out what actually keeps young people out, and what might bring them back. My work centered on the pricing analysis and the student strategy.
+    </p>
+    <div class="grid-4" style="margin-top:36px;">
+      <div class="stat-card"><div class="stat-num">68</div><div class="stat-label">Survey responses</div></div>
+      <div class="stat-card"><div class="stat-num">p&lt;.001</div><div class="stat-label">Age × willingness-to-pay significance</div></div>
+      <div class="stat-card"><div class="stat-num">65.2%</div><div class="stat-label">Had never been to the Charles</div></div>
+      <div class="stat-card"><div class="stat-num">7.6%</div><div class="stat-label">See a movie theatre as a "third place"</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<div class="block">
+  <div class="wrap">
+    <div class="eyebrow" style="margin-bottom:10px;">The Problem</div>
+    <p style="font-size:16px; line-height:1.75; color:var(--ink); max-width:660px;">
+      A "third place" — sociologist Ray Oldenburg's term — is the social ground between home and work where community forms: the café, the bar, the local cinema. Streaming has hollowed that role out of moviegoing. Nationally, ~75% of adults streamed a new release last year while only ~16% attended a theatre monthly, and moviegoing has shifted from a social ritual to a transactional, event-only outing. The Charles has the raw material to resist that — a historic identity, curated independent programming, and its community-minded "Cinema Sundays" series. The question was whether it could reposition itself as a genuine third place for younger Baltimore, and what would have to change for it to happen.
+    </p>
+  </div>
+</div>
+
+<!-- H1: PRICE SENSITIVITY BY AGE (centerpiece) -->
+<div class="block">
+  <div class="wrap">
+    <h2 class="section-title">Price sensitivity climbs with age</h2>
+    <p class="sub">Willingness to pay for a single ticket, by age group. Click an age band. (n = 66)</p>
+    <div class="tabs" id="ageTabs"></div>
+    <div class="chartbox">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px;">
+        <div class="eyebrow" id="ageMeta">18–24 · 37 respondents</div>
+        <div class="eyebrow">Willingness to pay</div>
+      </div>
+      <div class="hbars" id="wtpBars"></div>
+    </div>
+    <p class="note" id="ageNote"></p>
+  </div>
+</div>
+
+<!-- BARRIERS -->
+<div class="block">
+  <div class="wrap">
+    <h2 class="section-title">What's keeping them home</h2>
+    <p class="sub">Biggest barriers to visiting a theatre more often — respondents could choose several. (n = 66)</p>
+    <div class="chartbox"><div class="hbars" id="barriers"></div></div>
+  </div>
+</div>
+
+<!-- PERCEPTION + THIRD PLACES -->
+<div class="block">
+  <div class="wrap">
+    <h2 class="section-title">Is the Charles even on their radar?</h2>
+    <p class="sub">How respondents see the Charles Theatre, and what they count as their own "third places." (n = 66)</p>
+    <div class="grid-2">
+      <div class="chartbox">
+        <div class="eyebrow" style="margin-bottom:16px;">"Does the Charles feel like a community space?"</div>
+        <div class="donutwrap">
+          <svg id="donut" width="150" height="150" viewBox="0 0 150 150" style="flex-shrink:0;"></svg>
+          <div class="legend" id="percLegend"></div>
+        </div>
+      </div>
+      <div class="chartbox">
+        <div class="eyebrow" style="margin-bottom:16px;">"Which of these are third places for you?"</div>
+        <div class="hbars" id="thirdPlaces"></div>
+      </div>
+    </div>
+    <p class="note">Only 7.6% named a movie theatre as one of their own third places — behind the gym, the coffee shop, the library, the park, even religious spaces. The Charles isn't losing the third-place competition; for most young people it was never in it.</p>
+  </div>
+</div>
+
+<!-- MEMBERSHIP NULL RESULT -->
+<div class="block">
+  <div class="wrap">
+    <h2 class="section-title">Would a membership move the needle? Not on its own.</h2>
+    <p class="sub">We tested whether a ~$15/month unlimited membership would raise attendance. It didn't hold up. (n = 66)</p>
+    <div class="grid-4" style="margin-bottom:8px;">
+      <div class="stat-card"><div class="stat-num" style="color:var(--accent);">30.3%</div><div class="stat-label">Yes, it would</div></div>
+      <div class="stat-card"><div class="stat-num">30.3%</div><div class="stat-label">Maybe</div></div>
+      <div class="stat-card"><div class="stat-num">39.4%</div><div class="stat-label">No</div></div>
+      <div class="stat-card"><div class="stat-num">p=.624</div><div class="stat-label">Not statistically significant (χ² by age)</div></div>
+    </div>
+    <p class="note">A flat unlimited-movies subscription showed no significant relationship with age or intent (χ² = 4.39, p = .624). The lever isn't a generic membership — it's price, aimed squarely at the youngest, most price-sensitive band, and wrapped in the community experience that actually differentiates the Charles.</p>
+  </div>
+</div>
+
+<!-- RECOMMENDATION -->
+<div class="block" style="border-bottom:none;">
+  <div class="wrap">
+    <h2 class="section-title" style="margin-bottom:6px;">What we recommended</h2>
+    <p class="sub">Three moves that follow directly from the data.</p>
+    <div class="grid-2" style="margin-bottom:8px;">
+      <div class="rec"><div class="eyebrow">01</div><h3>Meet the 18–24 price wall head-on</h3>
+        <p>The youngest band — the one the Charles most needs — won't pay over $10, and 63.6% of all respondents said a sub-$10 ticket would get them there more often. A student price isn't a discount; it's the price of entry for this audience.</p></div>
+      <div class="rec"><div class="eyebrow">02</div><h3>Sell community, not just a screen</h3>
+        <p>Only 7.6% see a cinema as a third place, yet the Charles's Cinema Sundays — film plus post-screening discussion — already does exactly that. Lead with the shared experience streaming can't copy: discussion, revival series, and events.</p></div>
+    </div>
+
+    <div class="ticket">
+      <div class="kicker">03 — The flagship recommendation</div>
+      <h3>Student Cinema Sundays</h3>
+      <div class="price">
+        <div class="p">$10<small>Single student ticket</small></div>
+        <div class="p">$40<small>Season membership</small></div>
+        <div class="p">18–24<small>College students</small></div>
+      </div>
+      <p class="body">A student-priced spin on the Charles's existing Cinema Sundays: thought-provoking films, a structured post-screening discussion, and a relaxed social setting — Sunday afternoons, so classes are easy to skip. It turns a first visit (for the 65% who've never come) into a repeat habit, at the one price point the data says this audience will actually pay. We paired it with a proposed field experiment — randomizing students across $10 / $15 / $20 tickets — to measure the price-elasticity effect directly before rollout.</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="endnav">
+    <span style="font-family:var(--font-display); font-style:italic; font-size:20px; color:var(--ink-soft);">See the other work →</span>
+    <a href="index.html#work">Back to all work</a>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="wrap">
+    <p>Marketing Research (K1), Johns Hopkins Carey Business School, 2026 — team: Megha Gupta, Morgan Fierro, Sakhi Shah, Ainsley Edwards, Chika Nzekwe, Logan Scully. Method: 17-question survey, n = 68 (snowball sample, Baltimore-area), analyzed in JASP with chi-squared contingency tests. Frameworks: Oldenburg's Third Place theory; AP-NORC and MPA industry data. Figures reflect the 66 respondents who completed the full survey.</p>
+  </div>
+</div>
+
+<script>
+const C={accent:'#E3B8B2', taupe:'#B49B96', surface:'#112720', ink:'#F5DEDA', inkSoft:'#C4A8A3'};
+
+/* ---- H1: willingness to pay by age ---- */
+const AGES={
+  "18–24":{n:37, note:"Nearly half (43%) won't pay over $10, and not one 18–24 respondent would pay $20 or more. For the audience the Charles most needs to win, price is the wall.",
+    dist:[["Under $10",16],["$10–14",18],["$15–19",3],["$20 +",0]]},
+  "25–34":{n:22, note:"More willing to meet in the middle — $10–14 is the mode — but still clustered below $15.",
+    dist:[["Under $10",4],["$10–14",12],["$15–19",5],["$20 +",1]]},
+  "35–49":{n:4, note:"A small group, but every respondent would pay $15 or more — the inverse of the youngest bracket.",
+    dist:[["Under $10",0],["$10–14",0],["$15–19",3],["$20 +",1]]},
+  "50 +":{n:3, note:"The premium end: most would pay $20+. Willingness to pay is highest exactly where attendance intent is lowest.",
+    dist:[["Under $10",0],["$10–14",0],["$15–19",1],["$20 +",2]]},
+  "All ages":{n:66, note:"Across all 66 respondents, willingness to pay rises sharply with age — a chi-squared test confirms it (χ² = 41.57, p < .001). This is the central, statistically significant finding of the study.",
+    dist:[["Under $10",20],["$10–14",30],["$15–19",12],["$20 +",4]]}
+};
+function renderWTP(name){
+  const d=AGES[name];
+  document.getElementById('ageMeta').textContent=name+" · "+d.n+" respondents";
+  document.getElementById('ageNote').textContent=d.note;
+  document.getElementById('wtpBars').innerHTML=d.dist.map(([lbl,v])=>{
+    const p=d.n?Math.round(v/d.n*100):0;
+    return `<div class="hrow"><span class="hl">${lbl}</span><div class="htrack"><div class="hfill" style="width:${p}%"></div></div><span class="hval">${p}% <small>(${v})</small></span></div>`;
+  }).join('');
+  document.querySelectorAll('#ageTabs .tab-btn').forEach(b=>b.classList.toggle('active', b.dataset.a===name));
+}
+document.getElementById('ageTabs').innerHTML=Object.keys(AGES).map(a=>`<button class="tab-btn" data-a="${a}">${a}</button>`).join('');
+document.querySelectorAll('#ageTabs .tab-btn').forEach(b=>b.addEventListener('click',()=>renderWTP(b.dataset.a)));
+renderWTP("18–24");
+
+/* ---- barriers ---- */
+const barriers=[["Inconvenience",40,60.6],["Ticket price",34,51.5],["Not enough good films",30,45.5],["Limited showtimes",26,39.4],["Parking / transport",11,16.7],["Safety concerns",3,4.5]];
+const bmax=Math.max(...barriers.map(b=>b[2]));
+document.getElementById('barriers').innerHTML=barriers.map(([l,c,p])=>
+  `<div class="hrow"><span class="hl">${l}</span><div class="htrack"><div class="hfill" style="width:${(p/bmax*100).toFixed(0)}%"></div></div><span class="hval">${p}% <small>(${c})</small></span></div>`
+).join('');
+
+/* ---- third places ---- */
+const tp=[["Gym",40,60.6,0],["Coffee shop",34,51.5,0],["Library",22,33.3,0],["Park",17,25.8,0],["Bar",15,22.7,0],["Religious places",15,22.7,0],["Movie theatre",5,7.6,1]];
+const tmax=Math.max(...tp.map(t=>t[2]));
+document.getElementById('thirdPlaces').innerHTML=tp.map(([l,c,p,hi])=>
+  `<div class="hrow"><span class="hl">${l}</span><div class="htrack"><div class="hfill ${hi?'':'muted'}" style="width:${(p/tmax*100).toFixed(0)}%"></div></div><span class="hval">${p}% <small>(${c})</small></span></div>`
+).join('');
+
+/* ---- perception donut ---- */
+const perc=[["Never been",43,C.accent],["Primarily watch movies",10,C.taupe],["Somewhat — a bit of both",8,"#7FB9A6"],["Definitely community",5,"#16362B"]];
+(function(){
+  const cx=75,cy=75,rOut=62,rIn=38,total=perc.reduce((s,e)=>s+e[1],0),pad=0.03;
+  let ang=-Math.PI/2, svg='';
+  function polar(r,a){ return [cx+r*Math.cos(a),cy+r*Math.sin(a)]; }
+  perc.forEach(([lbl,v,col])=>{
+    const frac=v/total, a0=ang+pad/2, a1=ang+frac*2*Math.PI-pad/2, large=(a1-a0)>Math.PI?1:0;
+    const [x0,y0]=polar(rOut,a0),[x1,y1]=polar(rOut,a1),[x2,y2]=polar(rIn,a1),[x3,y3]=polar(rIn,a0);
+    svg+=`<path class="donut-seg" d="M${x0.toFixed(1)} ${y0.toFixed(1)} A${rOut} ${rOut} 0 ${large} 1 ${x1.toFixed(1)} ${y1.toFixed(1)} L${x2.toFixed(1)} ${y2.toFixed(1)} A${rIn} ${rIn} 0 ${large} 0 ${x3.toFixed(1)} ${y3.toFixed(1)} Z" fill="${col}" stroke="${C.surface}" stroke-width="2"><title>${lbl}: ${Math.round(v/total*100)}%</title></path>`;
+    ang+=frac*2*Math.PI;
+  });
+  document.getElementById('donut').innerHTML=svg;
+  document.getElementById('percLegend').innerHTML=perc.map(([lbl,v,col])=>
+    `<div class="li"><span class="dot" style="background:${col}"></span><span class="nm">${lbl}</span><span class="vl">${Math.round(v/total*100)}%</span></div>`
+  ).join('');
+})();
+</script>
+</body>
+</html>
