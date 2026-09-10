@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>everyday whimsy</title>
+<meta name="description" content="a lil junk drawer of everything i love looking at.">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sky"></div>
+<div class="grain"></div>
+
+<div class="wrap">
+
+  <header>
+    <button class="logo" id="home-link">everyday whimsy</button>
+    <button class="toggle" id="toggle" aria-label="Switch between day and night sky">
+      <span id="toggle-icon">☾</span><span id="toggle-label">night</span>
+    </button>
+  </header>
+
+  <section class="hero">
+    <canvas class="doodle d-1" width="200" height="200"></canvas>
+    <canvas class="doodle d-2" width="200" height="200"></canvas>
+    <span class="eyebrow">actually, life is beautiful — and i love living it</span>
+    <h1>everyday whimsy</h1>
+    <p class="lede">a lil junk drawer of everything i love looking at — days turn into memories so fast, so i take pictures of it all.</p>
+  </section>
+
+  <p class="cats-intro">tap a photo to open the drawer ✶</p>
+
+  <main id="categories"></main>
+
+  <div class="closing">
+    <p class="big">i used to think i needed something big. turns out it was all the small stuff.</p>
+    <div class="sign">with love, sakhi ✶</div>
+  </div>
+
+  <footer>everyday whimsy — a work in progress · 2026</footer>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <img id="lb-img" alt="">
+  <div class="lb-cap" id="lb-cap"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
